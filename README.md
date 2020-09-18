@@ -26,14 +26,21 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
+  A .forEach loops through without stopping, does not need a return.
+  A .map creates a brand new array and needs a return statement.
 
 2. Explain the difference between a callback and a higher order function.
-
+   A higher order function receives a call back as an argument. It's like if I'm cooking, I'm the higher order function and the recipie card is the call back. I can use the recipe card as many times as I want or pass it off to a roommate who would then be the higher order function, using the cb. 
 3. What is closure?
-
+    In other words, a closure gives you access to an outer function’s scope from an inner function... It is the kitchen in the house. Function House, holds function kitchen, in function kitchen, function cook uses the cb recipe. 
 4. Describe the four rules of the 'this' keyword.
+   Principle 1: Window/Global Object Binding, also called default... don't do this.
+   Principle 2: Implicit Binding: Whenever a preceding dot calls a function, the object before the dot is this. This seems most like normal pronoun attribution. It is also the most common use of the this key word.
+   Principle 3: New binding this is when we're making a new instance
+   Principle 4: Explicit binding for use with .call or .apply
 
 5. Why do we need super() in an extended class?
+      The super keyword is used to access and call functions on an object's parent.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
