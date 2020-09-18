@@ -4,20 +4,20 @@
 
 
 const external = "I'm outside the function";
-
+//function start
 function myFunction() {
   console.log(external);
   const internal = "Hello! I'm inside myFunction!";
-
+//nested function start
   function nestedFunction() {
     console.log(internal);
-  };
-  nestedFunction();
-}
+  };// kitchen function close
+  nestedFunction(); // kitchen function runs, within the scope of the house function.
+} // house function close
 myFunction();
 
 // Explanation: 
-
+//The nested function is within the local scope of myFunction, like my kitchen can use the roof on my house. This can be really useful when we have to control when a function runs. 
 
 /* Task 2: Counter */
 
